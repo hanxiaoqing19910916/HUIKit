@@ -1,5 +1,5 @@
 PODS:
-  - HUIKit (0.1.0)
+  - HUIKit (0.1.1)
 
 DEPENDENCIES:
   - HUIKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  HUIKit: 050acc0fc78c0fdb5e6e24149e80ec5f9f0341cb
+  HUIKit: f5b69f3fe6c802e27f78aef61286b29409eaa22d
 
 PODFILE CHECKSUM: e00aa5425843beb38c608d1057127a9642e831d9
 

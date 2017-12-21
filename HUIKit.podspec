@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HUIKit'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'HUIKit For Mac App'
 
 # This description is used to generate tags and improve search results.
@@ -28,10 +28,10 @@ A Swift UI Components For Mac App Develop
   s.source           = { :git => 'https://github.com/hanxiaoqing19910916/HUIKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.osx.deployment_target = "10.11"
+  s.osx.deployment_target = "10.10"
 
-  s.source_files = 'HUIKit/Classes/**/*.{h,m,swift}'
-  
+#s.source_files = 'HUIKit/Classes/SwiftExtention/*', 'HUIKit/Classes/SwiftUtils/*', 'HUIKit/Classes/UIClasses/*'
+  s.vendored_framework = 'Example/Build/Products/Release/HUIKit.framework'
   # s.resource_bundles = {
   #   'HUIKit' => ['HUIKit/Assets/*.png']
   # }

@@ -11,8 +11,49 @@
 		8A4CECCC1FEBAFF600DFE86C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CECCB1FEBAFF600DFE86C /* ViewController.swift */; };
 		8A4CECCE1FEBAFF600DFE86C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4CECCD1FEBAFF600DFE86C /* Assets.xcassets */; };
 		8A4CECD11FEBAFF600DFE86C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4CECCF1FEBAFF600DFE86C /* Main.storyboard */; };
+		8A4CECE71FEBCAA500DFE86C /* HUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4CECE51FEBCAA500DFE86C /* HUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A4CECEA1FEBCAA500DFE86C /* HUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4CECE31FEBCAA500DFE86C /* HUIKit.framework */; };
+		8A4CECEC1FEBCAA500DFE86C /* HUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4CECE31FEBCAA500DFE86C /* HUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A4CED121FEBCC5A00DFE86C /* ColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED021FEBCC5A00DFE86C /* ColorExtention.swift */; };
+		8A4CED131FEBCC5A00DFE86C /* DateExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED031FEBCC5A00DFE86C /* DateExtention.swift */; };
+		8A4CED141FEBCC5A00DFE86C /* FontExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED041FEBCC5A00DFE86C /* FontExtention.swift */; };
+		8A4CED151FEBCC5A00DFE86C /* ImageExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED051FEBCC5A00DFE86C /* ImageExtention.swift */; };
+		8A4CED161FEBCC5A00DFE86C /* LayerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED061FEBCC5A00DFE86C /* LayerExtention.swift */; };
+		8A4CED171FEBCC5A00DFE86C /* StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED071FEBCC5A00DFE86C /* StringExtention.swift */; };
+		8A4CED181FEBCC5A00DFE86C /* ViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED081FEBCC5A00DFE86C /* ViewExtention.swift */; };
+		8A4CED191FEBCC5A00DFE86C /* DrawingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED0A1FEBCC5A00DFE86C /* DrawingContext.swift */; };
+		8A4CED1A1FEBCC5B00DFE86C /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED0B1FEBCC5A00DFE86C /* UIUtils.swift */; };
+		8A4CED1B1FEBCC5B00DFE86C /* HAnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED0D1FEBCC5A00DFE86C /* HAnimatedImageView.swift */; };
+		8A4CED1C1FEBCC5B00DFE86C /* HUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED0E1FEBCC5A00DFE86C /* HUIButton.swift */; };
+		8A4CED1D1FEBCC5B00DFE86C /* HUIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED0F1FEBCC5A00DFE86C /* HUIControl.swift */; };
+		8A4CED1E1FEBCC5B00DFE86C /* HUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED101FEBCC5A00DFE86C /* HUIView.swift */; };
+		8A4CED1F1FEBCC5B00DFE86C /* HUIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED111FEBCC5A00DFE86C /* HUIWindow.swift */; };
 		CEA16928B1F00AAA62A48791 /* Pods_HUIKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A3CE364D352F7C252DE407B /* Pods_HUIKit_Example.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A4CECE81FEBCAA500DFE86C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A4CECBE1FEBAFF600DFE86C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A4CECE21FEBCAA500DFE86C;
+			remoteInfo = HUIKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8A4CECEB1FEBCAA500DFE86C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8A4CECEC1FEBCAA500DFE86C /* HUIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1F61B021164A7F30F463BA4B /* Pods-HUIKit-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HUIKit-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HUIKit-Example/Pods-HUIKit-Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -25,6 +66,23 @@
 		8A4CECD01FEBAFF600DFE86C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A4CECD21FEBAFF600DFE86C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A4CECD31FEBAFF600DFE86C /* HUIKit_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HUIKit_Example.entitlements; sourceTree = "<group>"; };
+		8A4CECE31FEBCAA500DFE86C /* HUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A4CECE51FEBCAA500DFE86C /* HUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HUIKit.h; sourceTree = "<group>"; };
+		8A4CECE61FEBCAA500DFE86C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A4CED021FEBCC5A00DFE86C /* ColorExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtention.swift; sourceTree = "<group>"; };
+		8A4CED031FEBCC5A00DFE86C /* DateExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtention.swift; sourceTree = "<group>"; };
+		8A4CED041FEBCC5A00DFE86C /* FontExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontExtention.swift; sourceTree = "<group>"; };
+		8A4CED051FEBCC5A00DFE86C /* ImageExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExtention.swift; sourceTree = "<group>"; };
+		8A4CED061FEBCC5A00DFE86C /* LayerExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerExtention.swift; sourceTree = "<group>"; };
+		8A4CED071FEBCC5A00DFE86C /* StringExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtention.swift; sourceTree = "<group>"; };
+		8A4CED081FEBCC5A00DFE86C /* ViewExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtention.swift; sourceTree = "<group>"; };
+		8A4CED0A1FEBCC5A00DFE86C /* DrawingContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingContext.swift; sourceTree = "<group>"; };
+		8A4CED0B1FEBCC5A00DFE86C /* UIUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
+		8A4CED0D1FEBCC5A00DFE86C /* HAnimatedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HAnimatedImageView.swift; sourceTree = "<group>"; };
+		8A4CED0E1FEBCC5A00DFE86C /* HUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUIButton.swift; sourceTree = "<group>"; };
+		8A4CED0F1FEBCC5A00DFE86C /* HUIControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUIControl.swift; sourceTree = "<group>"; };
+		8A4CED101FEBCC5A00DFE86C /* HUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUIView.swift; sourceTree = "<group>"; };
+		8A4CED111FEBCC5A00DFE86C /* HUIWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUIWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +90,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4CECEA1FEBCAA500DFE86C /* HUIKit.framework in Frameworks */,
 				CEA16928B1F00AAA62A48791 /* Pods_HUIKit_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A4CECDF1FEBCAA500DFE86C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				8A4CECC81FEBAFF600DFE86C /* HUIKit-Example */,
+				8A4CECE41FEBCAA500DFE86C /* HUIKit */,
 				8A4CECC71FEBAFF600DFE86C /* Products */,
 				CFBC4D78A75CB87719153662 /* Pods */,
 				AC1C6A439B32211E7749794F /* Frameworks */,
@@ -53,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				8A4CECC61FEBAFF600DFE86C /* HUIKit-Example.app */,
+				8A4CECE31FEBCAA500DFE86C /* HUIKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +136,56 @@
 				8A4CECD31FEBAFF600DFE86C /* HUIKit_Example.entitlements */,
 			);
 			path = "HUIKit-Example";
+			sourceTree = "<group>";
+		};
+		8A4CECE41FEBCAA500DFE86C /* HUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				8A4CED011FEBCC5A00DFE86C /* SwiftExtention */,
+				8A4CED091FEBCC5A00DFE86C /* SwiftUtils */,
+				8A4CED0C1FEBCC5A00DFE86C /* UIClasses */,
+				8A4CECE51FEBCAA500DFE86C /* HUIKit.h */,
+				8A4CECE61FEBCAA500DFE86C /* Info.plist */,
+			);
+			path = HUIKit;
+			sourceTree = "<group>";
+		};
+		8A4CED011FEBCC5A00DFE86C /* SwiftExtention */ = {
+			isa = PBXGroup;
+			children = (
+				8A4CED021FEBCC5A00DFE86C /* ColorExtention.swift */,
+				8A4CED031FEBCC5A00DFE86C /* DateExtention.swift */,
+				8A4CED041FEBCC5A00DFE86C /* FontExtention.swift */,
+				8A4CED051FEBCC5A00DFE86C /* ImageExtention.swift */,
+				8A4CED061FEBCC5A00DFE86C /* LayerExtention.swift */,
+				8A4CED071FEBCC5A00DFE86C /* StringExtention.swift */,
+				8A4CED081FEBCC5A00DFE86C /* ViewExtention.swift */,
+			);
+			name = SwiftExtention;
+			path = ../../HUIKit/Classes/SwiftExtention;
+			sourceTree = "<group>";
+		};
+		8A4CED091FEBCC5A00DFE86C /* SwiftUtils */ = {
+			isa = PBXGroup;
+			children = (
+				8A4CED0A1FEBCC5A00DFE86C /* DrawingContext.swift */,
+				8A4CED0B1FEBCC5A00DFE86C /* UIUtils.swift */,
+			);
+			name = SwiftUtils;
+			path = ../../HUIKit/Classes/SwiftUtils;
+			sourceTree = "<group>";
+		};
+		8A4CED0C1FEBCC5A00DFE86C /* UIClasses */ = {
+			isa = PBXGroup;
+			children = (
+				8A4CED0D1FEBCC5A00DFE86C /* HAnimatedImageView.swift */,
+				8A4CED0E1FEBCC5A00DFE86C /* HUIButton.swift */,
+				8A4CED0F1FEBCC5A00DFE86C /* HUIControl.swift */,
+				8A4CED101FEBCC5A00DFE86C /* HUIView.swift */,
+				8A4CED111FEBCC5A00DFE86C /* HUIWindow.swift */,
+			);
+			name = UIClasses;
+			path = ../../HUIKit/Classes/UIClasses;
 			sourceTree = "<group>";
 		};
 		AC1C6A439B32211E7749794F /* Frameworks */ = {
@@ -89,6 +207,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		8A4CECE01FEBCAA500DFE86C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A4CECE71FEBCAA500DFE86C /* HUIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		8A4CECC51FEBAFF600DFE86C /* HUIKit-Example */ = {
 			isa = PBXNativeTarget;
@@ -100,15 +229,35 @@
 				8A4CECC41FEBAFF600DFE86C /* Resources */,
 				0B447B438EE4DF6F483EA182 /* [CP] Embed Pods Frameworks */,
 				A67663D89976C38DE2FDA565 /* [CP] Copy Pods Resources */,
+				8A4CECEB1FEBCAA500DFE86C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8A4CECE91FEBCAA500DFE86C /* PBXTargetDependency */,
 			);
 			name = "HUIKit-Example";
 			productName = "HUIKit-Example";
 			productReference = 8A4CECC61FEBAFF600DFE86C /* HUIKit-Example.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8A4CECE21FEBCAA500DFE86C /* HUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A4CECEF1FEBCAA500DFE86C /* Build configuration list for PBXNativeTarget "HUIKit" */;
+			buildPhases = (
+				8A4CECDE1FEBCAA500DFE86C /* Sources */,
+				8A4CECDF1FEBCAA500DFE86C /* Frameworks */,
+				8A4CECE01FEBCAA500DFE86C /* Headers */,
+				8A4CECE11FEBCAA500DFE86C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HUIKit;
+			productName = HUIKit;
+			productReference = 8A4CECE31FEBCAA500DFE86C /* HUIKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -121,6 +270,10 @@
 				ORGANIZATIONNAME = hanxiaoqing;
 				TargetAttributes = {
 					8A4CECC51FEBAFF600DFE86C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					8A4CECE21FEBCAA500DFE86C = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -140,6 +293,7 @@
 			projectRoot = "";
 			targets = (
 				8A4CECC51FEBAFF600DFE86C /* HUIKit-Example */,
+				8A4CECE21FEBCAA500DFE86C /* HUIKit */,
 			);
 		};
 /* End PBXProject section */
@@ -151,6 +305,13 @@
 			files = (
 				8A4CECCE1FEBAFF600DFE86C /* Assets.xcassets in Resources */,
 				8A4CECD11FEBAFF600DFE86C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A4CECE11FEBCAA500DFE86C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +381,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8A4CECDE1FEBCAA500DFE86C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A4CED1B1FEBCC5B00DFE86C /* HAnimatedImageView.swift in Sources */,
+				8A4CED1C1FEBCC5B00DFE86C /* HUIButton.swift in Sources */,
+				8A4CED191FEBCC5A00DFE86C /* DrawingContext.swift in Sources */,
+				8A4CED151FEBCC5A00DFE86C /* ImageExtention.swift in Sources */,
+				8A4CED171FEBCC5A00DFE86C /* StringExtention.swift in Sources */,
+				8A4CED161FEBCC5A00DFE86C /* LayerExtention.swift in Sources */,
+				8A4CED1D1FEBCC5B00DFE86C /* HUIControl.swift in Sources */,
+				8A4CED1E1FEBCC5B00DFE86C /* HUIView.swift in Sources */,
+				8A4CED181FEBCC5A00DFE86C /* ViewExtention.swift in Sources */,
+				8A4CED141FEBCC5A00DFE86C /* FontExtention.swift in Sources */,
+				8A4CED1F1FEBCC5B00DFE86C /* HUIWindow.swift in Sources */,
+				8A4CED1A1FEBCC5B00DFE86C /* UIUtils.swift in Sources */,
+				8A4CED131FEBCC5A00DFE86C /* DateExtention.swift in Sources */,
+				8A4CED121FEBCC5A00DFE86C /* ColorExtention.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A4CECE91FEBCAA500DFE86C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A4CECE21FEBCAA500DFE86C /* HUIKit */;
+			targetProxy = 8A4CECE81FEBCAA500DFE86C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8A4CECCF1FEBAFF600DFE86C /* Main.storyboard */ = {
@@ -282,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -333,7 +523,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -344,6 +534,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3FB7E280FE59548EF21E81EF /* Pods-HUIKit-Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "HUIKit-Example/HUIKit_Example.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -360,6 +551,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1F61B021164A7F30F463BA4B /* Pods-HUIKit-Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "HUIKit-Example/HUIKit_Example.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -369,6 +561,54 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "han.HUIKit-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		8A4CECED1FEBCAA500DFE86C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = HUIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = han.HUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A4CECEE1FEBCAA500DFE86C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = HUIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = han.HUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -389,6 +629,15 @@
 			buildConfigurations = (
 				8A4CECD71FEBAFF600DFE86C /* Debug */,
 				8A4CECD81FEBAFF600DFE86C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A4CECEF1FEBCAA500DFE86C /* Build configuration list for PBXNativeTarget "HUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A4CECED1FEBCAA500DFE86C /* Debug */,
+				8A4CECEE1FEBCAA500DFE86C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
