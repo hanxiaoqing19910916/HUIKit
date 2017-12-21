@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'HUIKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of HUIKit.'
+  s.summary          = 'HUIKit For Mac App'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A Swift UI Components For Mac App Develop
                        DESC
 
-  s.homepage         = 'https://github.com/190658047@qq.com/HUIKit'
+  s.homepage         = 'https://github.com/hanxiaoqing19910916/HUIKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '190658047@qq.com' => 'xiaoqing@han.com' }
-  s.source           = { :git => 'https://github.com/190658047@qq.com/HUIKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/hanxiaoqing19910916/HUIKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = "10.11"
 
   s.source_files = 'HUIKit/Classes/**/*'
   

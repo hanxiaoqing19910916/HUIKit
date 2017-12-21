@@ -1,0 +1,22 @@
+{
+  "name": "HUIKit",
+  "version": "0.1.0",
+  "summary": "HUIKit For Mac App",
+  "description": "A Swift UI Components For Mac App Develop",
+  "homepage": "https://github.com/190658047@qq.com/HUIKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "190658047@qq.com": "xiaoqing@han.com"
+  },
+  "source": {
+    "git": "",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "osx": "10.11"
+  },
+  "source_files": "HUIKit/Classes/**/*"
+}

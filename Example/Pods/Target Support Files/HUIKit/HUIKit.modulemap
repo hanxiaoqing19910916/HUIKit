@@ -1,0 +1,6 @@
+framework module HUIKit {
+  umbrella header "HUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

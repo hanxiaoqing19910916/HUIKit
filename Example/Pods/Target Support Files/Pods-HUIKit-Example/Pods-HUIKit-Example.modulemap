@@ -1,0 +1,6 @@
+framework module Pods_HUIKit_Example {
+  umbrella header "Pods-HUIKit-Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
