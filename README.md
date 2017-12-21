@@ -3,7 +3,6 @@
 [![CI Status](http://img.shields.io/travis/190658047@qq.com/HUIKit.svg?style=flat)](https://travis-ci.org/190658047@qq.com/HUIKit)
 [![Version](https://img.shields.io/cocoapods/v/HUIKit.svg?style=flat)](http://cocoapods.org/pods/HUIKit)
 [![License](https://img.shields.io/cocoapods/l/HUIKit.svg?style=flat)](http://cocoapods.org/pods/HUIKit)
-[![Platform](https://img.shields.io/cocoapods/p/HUIKit.svg?style=flat)](http://cocoapods.org/pods/HUIKit)
 
 ## Example
 
@@ -22,7 +21,7 @@ pod 'HUIKit'
 
 ## Author
 
-190658047@qq.com, xiaoqing@han.com
+190658047@qq.com
 
 ## License
 
