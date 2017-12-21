@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HUIKit_Example' do
+  pod 'HUIKit', :path => '../'
+
+  target 'HUIKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
