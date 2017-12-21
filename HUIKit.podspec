@@ -30,7 +30,7 @@ A Swift UI Components For Mac App Develop
 
   s.osx.deployment_target = "10.11"
 
-  s.source_files = 'HUIKit/Classes/**/*'
+  s.source_files = 'HUIKit/Classes/**/*.{h,m,swift}'
   
   # s.resource_bundles = {
   #   'HUIKit' => ['HUIKit/Assets/*.png']
