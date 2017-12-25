@@ -8,7 +8,6 @@
 import Cocoa
 
 
-
 public enum HUIViewContentMode : Int {
     
     case scaleToFill
