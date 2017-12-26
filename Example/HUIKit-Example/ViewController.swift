@@ -11,9 +11,13 @@ import HUIKit
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var fontLabel: NSTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let btn = HUIButton()
+//        NSFont.systemThinFont(16).italic()
+        fontLabel.font = NSFont.compactRoundFont(16)
+//        view.background = NSColor.blackTransparent
         
         // Do any additional setup after loading the view.
     }

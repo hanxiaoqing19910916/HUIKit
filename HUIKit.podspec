@@ -30,8 +30,14 @@ A Swift UI Components For Mac App Develop
 
   s.osx.deployment_target = "10.10"
 
-#s.source_files = 'HUIKit/Classes/SwiftExtention/*', 'HUIKit/Classes/SwiftUtils/*', 'HUIKit/Classes/UIClasses/*'
-  s.osx.vendored_frameworks = 'Example/Build/Products/Release/HUIKit.framework'
+  s.source_files = 'HUIKit/Classes/**/*'
+
+ s.subspec 'SwiftExtention' do |ss|
+    ss.source_files = 'HUIKit/Classes/SwiftExtention/*'
+ end
+
+
+#s.osx.vendored_frameworks = 'Example/Build/Products/Release/HUIKit.framework'
   # s.resource_bundles = {
   #   'HUIKit' => ['HUIKit/Assets/*.png']
   # }

@@ -12,8 +12,6 @@
 		8A4CECCE1FEBAFF600DFE86C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4CECCD1FEBAFF600DFE86C /* Assets.xcassets */; };
 		8A4CECD11FEBAFF600DFE86C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4CECCF1FEBAFF600DFE86C /* Main.storyboard */; };
 		8A4CECE71FEBCAA500DFE86C /* HUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4CECE51FEBCAA500DFE86C /* HUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A4CECEA1FEBCAA500DFE86C /* HUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4CECE31FEBCAA500DFE86C /* HUIKit.framework */; };
-		8A4CECEC1FEBCAA500DFE86C /* HUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4CECE31FEBCAA500DFE86C /* HUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8A4CED121FEBCC5A00DFE86C /* ColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED021FEBCC5A00DFE86C /* ColorExtention.swift */; };
 		8A4CED131FEBCC5A00DFE86C /* DateExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED031FEBCC5A00DFE86C /* DateExtention.swift */; };
 		8A4CED141FEBCC5A00DFE86C /* FontExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED041FEBCC5A00DFE86C /* FontExtention.swift */; };
@@ -30,30 +28,6 @@
 		8A4CED1F1FEBCC5B00DFE86C /* HUIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED111FEBCC5A00DFE86C /* HUIWindow.swift */; };
 		CEA16928B1F00AAA62A48791 /* Pods_HUIKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A3CE364D352F7C252DE407B /* Pods_HUIKit_Example.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		8A4CECE81FEBCAA500DFE86C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8A4CECBE1FEBAFF600DFE86C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8A4CECE21FEBCAA500DFE86C;
-			remoteInfo = HUIKit;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		8A4CECEB1FEBCAA500DFE86C /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				8A4CECEC1FEBCAA500DFE86C /* HUIKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1F61B021164A7F30F463BA4B /* Pods-HUIKit-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HUIKit-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HUIKit-Example/Pods-HUIKit-Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A4CECEA1FEBCAA500DFE86C /* HUIKit.framework in Frameworks */,
 				CEA16928B1F00AAA62A48791 /* Pods_HUIKit_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,12 +202,10 @@
 				8A4CECC41FEBAFF600DFE86C /* Resources */,
 				0B447B438EE4DF6F483EA182 /* [CP] Embed Pods Frameworks */,
 				A67663D89976C38DE2FDA565 /* [CP] Copy Pods Resources */,
-				8A4CECEB1FEBCAA500DFE86C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8A4CECE91FEBCAA500DFE86C /* PBXTargetDependency */,
 			);
 			name = "HUIKit-Example";
 			productName = "HUIKit-Example";
@@ -404,14 +375,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		8A4CECE91FEBCAA500DFE86C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8A4CECE21FEBCAA500DFE86C /* HUIKit */;
-			targetProxy = 8A4CECE81FEBCAA500DFE86C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		8A4CECCF1FEBAFF600DFE86C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -534,7 +497,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3FB7E280FE59548EF21E81EF /* Pods-HUIKit-Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "HUIKit-Example/HUIKit_Example.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -551,7 +513,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1F61B021164A7F30F463BA4B /* Pods-HUIKit-Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "HUIKit-Example/HUIKit_Example.entitlements";
 				CODE_SIGN_STYLE = Automatic;

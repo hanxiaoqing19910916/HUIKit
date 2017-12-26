@@ -1,6 +1,5 @@
 //
 //  LayerExtention.swift
-//  OneSwfitMacApp
 //
 //  Created by hanxiaoqing on 2017/11/7.
 //  Copyright © 2017年 hanxiaoqing. All rights reserved.
@@ -36,6 +35,11 @@ public extension CALayer {
     
 }
 
+
+public func floorToScreenPixels(_ value: CGFloat) -> CGFloat {
+    let scale = NSScreen.main?.backingScaleFactor ?? 1.0
+    return floor(value * scale) / scale
+}
 
 
 public let kCAMediaTimingFunctionSpring = "CAAnimationUtilsSpringCurve"

@@ -1,12 +1,10 @@
 //
 //  ViewExtention.swift
-//  OneSwfitMacApp
 //
 //  Created by hanxiaoqing on 2017/11/8.
 //  Copyright © 2017年 hanxiaoqing. All rights reserved.
 //
 import Cocoa
-
 
 public enum HUIViewContentMode : Int {
     
@@ -44,7 +42,6 @@ public extension NSView {
     
 }
 
-
 public extension NSView {
     
     public var snapshot: NSImage {
@@ -60,13 +57,7 @@ public extension NSView {
         if let window = self.window {
             var location:NSPoint = window.mouseLocationOutsideOfEventStream
             location = self.convert(location, from: nil)
-            
             if let view = window.contentView!.hitTest(window.mouseLocationOutsideOfEventStream) {
-                if let view = view as? HUIView {
-                    if view.isEventLess {
-                        return NSPointInRect(location, self.bounds)
-                    }
-                }
                 if view == self {
                     return NSPointInRect(location, self.bounds)
                 } else {
@@ -79,7 +70,6 @@ public extension NSView {
                     }
                 }
             }
-            
         }
         return false
     }
@@ -88,7 +78,7 @@ public extension NSView {
         if let window = window {
             return window.backingScaleFactor
         } else {
-            return System.backingScale
+            return CGFloat(NSScreen.main?.backingScaleFactor ?? 2.0)
         }
     }
     
@@ -98,7 +88,7 @@ public extension NSView {
         }
     }
     
-    public func isInnerView(_ view:NSView?) -> Bool {
+    public func isInnerView(_ view: NSView?) -> Bool {
         var inner = false
         for i in 0 ..< subviews.count {
             inner = subviews[i] == view
@@ -112,82 +102,57 @@ public extension NSView {
         return inner
     }
     
-    public func setFrameSize(_ width:CGFloat, _ height:CGFloat) {
-        self.setFrameSize(NSMakeSize(width, height))
-    }
-    
-    public func setFrameOrigin(_ x:CGFloat, _ y:CGFloat) {
-        self.setFrameOrigin(NSMakePoint(x, y))
-    }
-    
-    public var background:NSColor {
+    public var background: NSColor {
         get {
-            if let view = self as? HUIView {
-                return view.backgroundColor
-            }
             if let backgroundColor = layer?.backgroundColor {
                 return NSColor(cgColor: backgroundColor) ?? .white
             }
             return .white
         }
         set {
-            if let view = self as? HUIView {
-                view.backgroundColor = newValue
-            } else {
-                self.layer?.backgroundColor = newValue.cgColor
-            }
+            self.layer?.backgroundColor = newValue.cgColor
         }
-    }
+}
     
-    public func centerX(_ superView:NSView? = nil, y:CGFloat? = nil) -> Void {
-        
+    public func centerX(_ superView: NSView? = nil, y: CGFloat? = nil) -> Void {
         var x:CGFloat = 0
-        
         if let sv = superView {
             x = CGFloat(roundf(Float((sv.frame.width - frame.width)/2.0)))
         } else if let sv = self.superview {
             x = CGFloat(roundf(Float((sv.frame.width - frame.width)/2.0)))
         }
-        
         self.setFrameOrigin(NSMakePoint(x, y == nil ? NSMinY(self.frame) : y!))
     }
     
-    public func focus(_ size:NSSize) -> NSRect {
+    public func centerY(_ superView: NSView? = nil, x: CGFloat? = nil) -> Void {
+        var y: CGFloat = 0
+        if let sv = superView {
+            y = CGFloat(roundf(Float((sv.frame.height - frame.height)/2.0)))
+        } else if let sv = self.superview {
+            y = CGFloat(roundf(Float((sv.frame.height - frame.height)/2.0)))
+        }
+        self.setFrameOrigin(NSMakePoint(x ?? frame.minX, y))
+    }
+    
+    public func focus(_ size: NSSize) -> NSRect {
         var x:CGFloat = 0
         var y:CGFloat = 0
         
         x = CGFloat(roundf(Float((frame.width - size.width)/2.0)))
         y = CGFloat(roundf(Float((frame.height - size.height)/2.0)))
-        
-        
         return NSMakeRect(x, y, size.width, size.height)
     }
     
-    public func focus(_ size:NSSize, inset:NSEdgeInsets) -> NSRect {
+    public func focus(_ size: NSSize, inset: NSEdgeInsets) -> NSRect {
         let x:CGFloat = CGFloat(roundf(Float((frame.width - size.width + (inset.left + inset.right))/2.0)))
         let y:CGFloat = CGFloat(roundf(Float((frame.height - size.height + (inset.top + inset.bottom))/2.0)))
         return NSMakeRect(x, y, size.width, size.height)
     }
-    
-    public func centerY(_ superView:NSView? = nil, x:CGFloat? = nil) -> Void {
-        
-        var y:CGFloat = 0
-        
-        if let sv = superView {
-            y = CGFloat(roundf(Float((sv.frame.height - frame.height)/2.0)))
-        } else if let sv = self.superview {
-            y = CGFloat(roundf(Float((sv.frame.height - frame.height)/2.0)))
-        }
-        
-        self.setFrameOrigin(NSMakePoint(x ?? frame.minX, y))
-    }
-    
+
     
     public func center(_ superView:NSView? = nil) -> Void {
-        
         var x:CGFloat = 0
         var y:CGFloat = 0
-        
         if let sv = superView {
             x = CGFloat(roundf(Float((sv.frame.width - frame.width)/2.0)))
             y = CGFloat(roundf(Float((sv.frame.height - frame.height)/2.0)))
@@ -195,23 +160,19 @@ public extension NSView {
             x = CGFloat(roundf(Float((sv.frame.width - frame.width)/2.0)))
             y = CGFloat(roundf(Float((sv.frame.height - frame.height)/2.0)))
         }
-        
         self.setFrameOrigin(NSMakePoint(x, y))
-        
     }
     
     
-    public func _change(pos position: NSPoint, animated: Bool, _ save:Bool = true, removeOnCompletion: Bool = true, duration:Double = 0.2, timingFunction: String = kCAMediaTimingFunctionEaseOut, completion:((Bool)->Void)? = nil) -> Void {
+    public func _change(pos position: NSPoint, animated: Bool, _ save:Bool = true, removeOnCompletion: Bool = true, duration: Double = 0.2, timingFunction: String = kCAMediaTimingFunctionEaseOut, completion: ((Bool)->Void)? = nil) -> Void {
         if animated {
-            
             var presentX = NSMinX(self.frame)
             var presentY = NSMinY(self.frame)
-            let presentation:CALayer? = self.layer?.presentation()
+            let presentation: CALayer? = self.layer?.presentation()
             if let presentation = presentation, self.layer?.animation(forKey:"position") != nil {
                 presentY =  NSMinY(presentation.frame)
                 presentX = NSMinX(presentation.frame)
             }
-            
             self.layer?.animatePosition(from: NSMakePoint(presentX, presentY), to: position, duration: duration, timingFunction: timingFunction, removeOnCompletion: removeOnCompletion, completion: completion)
         } else {
             self.layer?.removeAnimation(forKey: "position")
@@ -281,7 +242,6 @@ public extension NSView {
                 layer.animateAlpha(from: opacity, to: to, duration:duration, timingFunction: timingFunction, removeOnCompletion: removeOnCompletion, completion: completion)
             }
             
-            
         } else {
             layer?.removeAnimation(forKey: "opacity")
         }
@@ -309,11 +269,10 @@ extension NSView {
         }
     }
     
-    public var top:CGFloat {
+    public var top: CGFloat {
         get {
             return self.frame.origin.y
         }
-        
         set(newTop) {
             var frame = self.frame
             frame.origin.y = newTop
@@ -321,11 +280,10 @@ extension NSView {
         }
     }
     
-    public var width:CGFloat {
+    public var width: CGFloat {
         get {
             return self.frame.size.width
         }
-        
         set(newWidth) {
             var frame = self.frame
             frame.size.width = newWidth
@@ -333,11 +291,10 @@ extension NSView {
         }
     }
     
-    public var height:CGFloat {
+    public var height: CGFloat {
         get {
             return self.frame.size.height
         }
-        
         set(newHeight) {
             var frame = self.frame
             frame.size.height = newHeight
@@ -345,13 +302,13 @@ extension NSView {
         }
     }
     
-    public var right:CGFloat {
+    public var right: CGFloat {
         get {
             return self.left + self.width
         }
     }
     
-    public var bottom:CGFloat {
+    public var bottom: CGFloat {
         get {
             return self.top + self.height
         }

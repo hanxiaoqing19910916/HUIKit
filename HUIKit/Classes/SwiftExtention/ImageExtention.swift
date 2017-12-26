@@ -1,6 +1,5 @@
 //
-//  Image.swift
-//  OneSwfitMacApp
+//  ImageExtention.swift
 //
 //  Created by hanxiaoqing on 2017/11/7.
 //  Copyright © 2017年 hanxiaoqing. All rights reserved.
@@ -33,10 +32,6 @@ public extension CGImage {
     }
     
 }
-
-
-
-
 
 
 public extension NSImage {

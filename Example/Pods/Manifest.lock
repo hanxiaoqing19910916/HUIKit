@@ -1,16 +1,16 @@
 PODS:
-  - HUIKit (0.1.1)
+  - HUIKit/SwiftExtention (0.1.2)
 
 DEPENDENCIES:
-  - HUIKit (from `../`)
+  - HUIKit/SwiftExtention (from `../`)
 
 EXTERNAL SOURCES:
   HUIKit:
     :path: ../
 
 SPEC CHECKSUMS:
-  HUIKit: f5b69f3fe6c802e27f78aef61286b29409eaa22d
+  HUIKit: de8cce63bcb0cef80f4e3fcd18c305a448df1dcd
 
-PODFILE CHECKSUM: e00aa5425843beb38c608d1057127a9642e831d9
+PODFILE CHECKSUM: ccd990b7446addbbf2c065e44b307ce8cc2a3d16
 
 COCOAPODS: 1.3.1

@@ -1,6 +1,5 @@
 //
 //  DateExtention.swift
-//  OneSwfitMacApp
 //
 //  Created by hanxiaoqing on 2017/10/31.
 //  Copyright © 2017年 hanxiaoqing. All rights reserved.

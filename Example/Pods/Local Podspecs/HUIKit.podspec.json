@@ -1,6 +1,6 @@
 {
   "name": "HUIKit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "HUIKit For Mac App",
   "description": "A Swift UI Components For Mac App Develop",
   "homepage": "https://github.com/hanxiaoqing19910916/HUIKit",
@@ -13,14 +13,16 @@
   },
   "source": {
     "git": "https://github.com/hanxiaoqing19910916/HUIKit.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "platforms": {
     "osx": "10.10"
   },
-  "source_files": [
-    "HUIKit/Classes/SwiftExtention/*",
-    "HUIKit/Classes/SwiftUtils/*",
-    "HUIKit/Classes/UIClasses/*"
+  "source_files": "HUIKit/Classes/**/*",
+  "subspecs": [
+    {
+      "name": "SwiftExtention",
+      "source_files": "HUIKit/Classes/SwiftExtention/*"
+    }
   ]
 }
