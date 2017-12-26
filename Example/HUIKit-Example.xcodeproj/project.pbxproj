@@ -19,7 +19,6 @@
 		8A4CED161FEBCC5A00DFE86C /* LayerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED061FEBCC5A00DFE86C /* LayerExtention.swift */; };
 		8A4CED171FEBCC5A00DFE86C /* StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED071FEBCC5A00DFE86C /* StringExtention.swift */; };
 		8A4CED181FEBCC5A00DFE86C /* ViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED081FEBCC5A00DFE86C /* ViewExtention.swift */; };
-		8A4CED191FEBCC5A00DFE86C /* DrawingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED0A1FEBCC5A00DFE86C /* DrawingContext.swift */; };
 		8A4CED1A1FEBCC5B00DFE86C /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED0B1FEBCC5A00DFE86C /* UIUtils.swift */; };
 		8A4CED1B1FEBCC5B00DFE86C /* HAnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED0D1FEBCC5A00DFE86C /* HAnimatedImageView.swift */; };
 		8A4CED1C1FEBCC5B00DFE86C /* HUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED0E1FEBCC5A00DFE86C /* HUIButton.swift */; };
@@ -50,7 +49,6 @@
 		8A4CED061FEBCC5A00DFE86C /* LayerExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerExtention.swift; sourceTree = "<group>"; };
 		8A4CED071FEBCC5A00DFE86C /* StringExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtention.swift; sourceTree = "<group>"; };
 		8A4CED081FEBCC5A00DFE86C /* ViewExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtention.swift; sourceTree = "<group>"; };
-		8A4CED0A1FEBCC5A00DFE86C /* DrawingContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingContext.swift; sourceTree = "<group>"; };
 		8A4CED0B1FEBCC5A00DFE86C /* UIUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
 		8A4CED0D1FEBCC5A00DFE86C /* HAnimatedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HAnimatedImageView.swift; sourceTree = "<group>"; };
 		8A4CED0E1FEBCC5A00DFE86C /* HUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUIButton.swift; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 		8A4CED091FEBCC5A00DFE86C /* SwiftUtils */ = {
 			isa = PBXGroup;
 			children = (
-				8A4CED0A1FEBCC5A00DFE86C /* DrawingContext.swift */,
 				8A4CED0B1FEBCC5A00DFE86C /* UIUtils.swift */,
 			);
 			name = SwiftUtils;
@@ -358,7 +355,6 @@
 			files = (
 				8A4CED1B1FEBCC5B00DFE86C /* HAnimatedImageView.swift in Sources */,
 				8A4CED1C1FEBCC5B00DFE86C /* HUIButton.swift in Sources */,
-				8A4CED191FEBCC5A00DFE86C /* DrawingContext.swift in Sources */,
 				8A4CED151FEBCC5A00DFE86C /* ImageExtention.swift in Sources */,
 				8A4CED171FEBCC5A00DFE86C /* StringExtention.swift in Sources */,
 				8A4CED161FEBCC5A00DFE86C /* LayerExtention.swift in Sources */,
