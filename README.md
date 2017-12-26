@@ -32,6 +32,42 @@ HUIKit is available under the MIT license. See the LICENSE file for more info.
     * [Features【Support what kinds of controls to refresh】](#Support_what_kinds_of_controls_to_refresh)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 
 <a id="Support_what_kinds_of_controls_to_refresh"></a>Support what kinds of controls to refresh
 * `UIScrollView`、`UITableView`、`UICollectionView`、`UIWebView`
