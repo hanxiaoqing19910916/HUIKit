@@ -1,6 +1,6 @@
 
 target 'HUIKit-Example' do
   use_frameworks!
-  pod 'HUIKit/SwiftExtention', :path => '../'
+  pod 'HUIKit', :path => '../'
 
 end

@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DFEB364FD3897A20AFA8C53DEDCBAFC /* ViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25900A9E7A417F3BFB0FFC4BBC43D26E /* ViewExtention.swift */; };
+		00BDC745E89D07A5C0C2F1261834A55B /* DateExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D7BA53160839FE693087D65B9E562F /* DateExtention.swift */; };
+		0FA110BBB3FCC79696B894A459FBCEE4 /* HUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5091B486BEDA0DDC1018F3F9CC0A1338 /* HUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		238F87AF9FC0BF52F918574F5B486D05 /* Pods-HUIKit-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3480FA94A3785CD9558DED8B1C404B2F /* Pods-HUIKit-Example-dummy.m */; };
-		4A94895810496102D31C415B98C99C7C /* LayerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C20A1E9635BF41637E7F73E9C6AD40 /* LayerExtention.swift */; };
-		5ED37E81CE7BBAE7659A1A072C8741AA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		7757AC3458572E7625EE216EB2E7CA2D /* HUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A22185EE7301A19EEA72BF4CF296BBE9 /* HUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		807D6599BD712FAC0038B204037B4264 /* ColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922470F38EECD4976B5E61E3CE97BAF3 /* ColorExtention.swift */; };
+		2E6362D85623DC96F6042691611D237D /* HUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442AFD34B5AF090113D7FAE091660726 /* HUIView.swift */; };
+		4425D3DC55499B494A382747D2864FB8 /* ColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8617427E41DE0F5D324D25E8DFFE0CFF /* ColorExtention.swift */; };
+		5EF97C2E09AAFA783CB8B4AD06FBECE0 /* ImageExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179880CA7A116A317337AA869780656F /* ImageExtention.swift */; };
+		6157CFEE5F3D8FB3D783D50DD4B0EF70 /* HAnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E610AB1624CCED3182D4E46BE5361 /* HAnimatedImageView.swift */; };
+		6590D52999DE71E393481F23111ED154 /* HUIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BE16C6A9C6B86EEE67EEB75463F3E /* HUIControl.swift */; };
+		701AB2AF38F2EB4C5A944EF431F93384 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58E71088FC958534165D1E935799E3 /* UIUtils.swift */; };
+		8E2939D9FDDD9CC252BF8C203B3B1901 /* FontExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387F39127FE40105BC7A977D9424E5C7 /* FontExtention.swift */; };
 		A82FA5AC4EF044A671D5C40C729A793F /* Pods-HUIKit-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B44E937D922FD47233C8E5454D636028 /* Pods-HUIKit-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C37CEE17B907A82A30AF8DB4E524852B /* StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FA5C08D58C3C48F7F77E481705F149 /* StringExtention.swift */; };
-		D9BD7A9317E7CCF3E83383707857567C /* HUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD491E2B4C76BEF82FBC5ADF8F7ACC3F /* HUIKit-dummy.m */; };
-		EB43CB63C41C7EEFACAEFC2CE864A0C2 /* DateExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7253C2AC7878D785E99E9AD85C99A21B /* DateExtention.swift */; };
-		EB4952C161680263EBEDC96776C86419 /* FontExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55B6B1C324D8FF6C22E53D8A5010200 /* FontExtention.swift */; };
+		B3BEC7FF54026B72A7814CE6081C846A /* HUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DA2DD57BDF80C586747A3EA889B47 /* HUIKit-dummy.m */; };
+		B88806D94D7D782107B8E2B8F688B070 /* HUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF4A1E4F6FD75B741F92F9F614D088E /* HUIButton.swift */; };
+		C7933F2A08B4C290103A29563EB2BE7B /* StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F061AC96CD5EE5D798FBAA7ED3A1C0 /* StringExtention.swift */; };
+		DE1351FFAED5D954647CCB4C94BFC283 /* HUIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF95703E8E30BDDD27B99D454BE49A4 /* HUIWindow.swift */; };
+		E18EFE96FEA06DFC292DE9855C543498 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		E4F3406B80F4C070657516D8E856930E /* LayerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C770967DFA8E3E5FE9ECBB45E48A22E1 /* LayerExtention.swift */; };
+		F0812D8BAFE91CA3DCEF9C464CE3E4D8 /* ViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F093A1C60F4C9C0DE85E484106AB06E /* ViewExtention.swift */; };
 		F4B4023BFFC4AF8840BAE2B5A22B49FD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		FB87AC6ADDA4F91F0B1C2762E94031DF /* ImageExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7F8485014D76110FF28A933D1A0E6 /* ImageExtention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +33,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AA71F5DCB45753936F679985AD66D888;
+			remoteGlobalIDString = 522672436FBC9863D0D14180BD7E0FC4;
 			remoteInfo = HUIKit;
 		};
 /* End PBXContainerItemProxy section */
@@ -35,30 +41,36 @@
 /* Begin PBXFileReference section */
 		0655427B4E2F67D26D34882D76C25542 /* HUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HUIKit.framework; path = HUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A8B7E3D0C4F69405B2C9207DD6EB8C4 /* Pods-HUIKit-Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HUIKit-Example-resources.sh"; sourceTree = "<group>"; };
-		0C0CF7862D038A4B380763ADA8B15FA9 /* HUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HUIKit.modulemap; sourceTree = "<group>"; };
-		10FA5C08D58C3C48F7F77E481705F149 /* StringExtention.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtention.swift; path = HUIKit/Classes/SwiftExtention/StringExtention.swift; sourceTree = "<group>"; };
-		25900A9E7A417F3BFB0FFC4BBC43D26E /* ViewExtention.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewExtention.swift; path = HUIKit/Classes/SwiftExtention/ViewExtention.swift; sourceTree = "<group>"; };
+		179880CA7A116A317337AA869780656F /* ImageExtention.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageExtention.swift; sourceTree = "<group>"; };
+		24F061AC96CD5EE5D798FBAA7ED3A1C0 /* StringExtention.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StringExtention.swift; sourceTree = "<group>"; };
 		270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		28196AEEE89FD3F6A28F44C19FFBFD67 /* Pods-HUIKit-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HUIKit-Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3480FA94A3785CD9558DED8B1C404B2F /* Pods-HUIKit-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HUIKit-Example-dummy.m"; sourceTree = "<group>"; };
+		387F39127FE40105BC7A977D9424E5C7 /* FontExtention.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FontExtention.swift; sourceTree = "<group>"; };
+		442AFD34B5AF090113D7FAE091660726 /* HUIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HUIView.swift; sourceTree = "<group>"; };
+		449BE16C6A9C6B86EEE67EEB75463F3E /* HUIControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HUIControl.swift; sourceTree = "<group>"; };
 		4A3DFF1E4B375CFE96762D9262CEAD11 /* Pods-HUIKit-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HUIKit-Example-frameworks.sh"; sourceTree = "<group>"; };
+		5091B486BEDA0DDC1018F3F9CC0A1338 /* HUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HUIKit-umbrella.h"; sourceTree = "<group>"; };
+		65010E54AF6BF075FEE881CE9B60C48A /* HUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HUIKit.modulemap; sourceTree = "<group>"; };
 		683B8F03D7F0266D7C5A4242E8B4A735 /* Pods-HUIKit-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HUIKit-Example.modulemap"; sourceTree = "<group>"; };
-		7253C2AC7878D785E99E9AD85C99A21B /* DateExtention.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateExtention.swift; path = HUIKit/Classes/SwiftExtention/DateExtention.swift; sourceTree = "<group>"; };
-		76C20A1E9635BF41637E7F73E9C6AD40 /* LayerExtention.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayerExtention.swift; path = HUIKit/Classes/SwiftExtention/LayerExtention.swift; sourceTree = "<group>"; };
-		84C7F8485014D76110FF28A933D1A0E6 /* ImageExtention.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageExtention.swift; path = HUIKit/Classes/SwiftExtention/ImageExtention.swift; sourceTree = "<group>"; };
-		91DAF665CEDE08148A10961D97C27358 /* HUIKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HUIKit.xcconfig; sourceTree = "<group>"; };
-		922470F38EECD4976B5E61E3CE97BAF3 /* ColorExtention.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorExtention.swift; path = HUIKit/Classes/SwiftExtention/ColorExtention.swift; sourceTree = "<group>"; };
+		6FF4A1E4F6FD75B741F92F9F614D088E /* HUIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HUIButton.swift; sourceTree = "<group>"; };
+		707FE60C3F9320B027A45856E6E83A80 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E4DA2DD57BDF80C586747A3EA889B47 /* HUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HUIKit-dummy.m"; sourceTree = "<group>"; };
+		8617427E41DE0F5D324D25E8DFFE0CFF /* ColorExtention.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorExtention.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		956E610AB1624CCED3182D4E46BE5361 /* HAnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HAnimatedImageView.swift; sourceTree = "<group>"; };
 		9EADF8682C508EEF6EB7992FD8ABF632 /* Pods-HUIKit-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HUIKit-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9F093A1C60F4C9C0DE85E484106AB06E /* ViewExtention.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewExtention.swift; sourceTree = "<group>"; };
 		9FFFE162050CE229BBAC8449FC8C84FB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A22185EE7301A19EEA72BF4CF296BBE9 /* HUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HUIKit-umbrella.h"; sourceTree = "<group>"; };
 		AFA9556FC6D5B6AEE0A836FA3946332D /* Pods_HUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HUIKit_Example.framework; path = "Pods-HUIKit-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B44E937D922FD47233C8E5454D636028 /* Pods-HUIKit-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HUIKit-Example-umbrella.h"; sourceTree = "<group>"; };
-		DD491E2B4C76BEF82FBC5ADF8F7ACC3F /* HUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HUIKit-dummy.m"; sourceTree = "<group>"; };
-		DE12CD03B49BC3DE60D8FC8BA8D8238E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E55B6B1C324D8FF6C22E53D8A5010200 /* FontExtention.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontExtention.swift; path = HUIKit/Classes/SwiftExtention/FontExtention.swift; sourceTree = "<group>"; };
+		BA1406A2FAC3FC227B87AE29BCE83BD1 /* HUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HUIKit-prefix.pch"; sourceTree = "<group>"; };
+		C770967DFA8E3E5FE9ECBB45E48A22E1 /* LayerExtention.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayerExtention.swift; sourceTree = "<group>"; };
+		CBF95703E8E30BDDD27B99D454BE49A4 /* HUIWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HUIWindow.swift; sourceTree = "<group>"; };
+		DA58E71088FC958534165D1E935799E3 /* UIUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
+		E2D7BA53160839FE693087D65B9E562F /* DateExtention.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DateExtention.swift; sourceTree = "<group>"; };
 		E741081855919E0E64AB4D621372E359 /* Pods-HUIKit-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HUIKit-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F7EF067A9F6EBAABF5260439C9951EA1 /* HUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HUIKit-prefix.pch"; sourceTree = "<group>"; };
+		EEC69FB97699397E566A4DC47EAC32FF /* HUIKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HUIKit.xcconfig; sourceTree = "<group>"; };
 		F9BDCCFCBD8DB8D0D532909768455144 /* Pods-HUIKit-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HUIKit-Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,11 +83,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB266214205B0FA1D145504E58A5F9EB /* Frameworks */ = {
+		75EA36B5962F0D1FAEBFE20ACF07C2B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ED37E81CE7BBAE7659A1A072C8741AA /* Cocoa.framework in Frameworks */,
+				E18EFE96FEA06DFC292DE9855C543498 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +120,20 @@
 			path = "Target Support Files/Pods-HUIKit-Example";
 			sourceTree = "<group>";
 		};
+		0B1DF587B68F36320BE30D8E391DC890 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				65010E54AF6BF075FEE881CE9B60C48A /* HUIKit.modulemap */,
+				EEC69FB97699397E566A4DC47EAC32FF /* HUIKit.xcconfig */,
+				7E4DA2DD57BDF80C586747A3EA889B47 /* HUIKit-dummy.m */,
+				BA1406A2FAC3FC227B87AE29BCE83BD1 /* HUIKit-prefix.pch */,
+				5091B486BEDA0DDC1018F3F9CC0A1338 /* HUIKit-umbrella.h */,
+				707FE60C3F9320B027A45856E6E83A80 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HUIKit";
+			sourceTree = "<group>";
+		};
 		138C862F8FB6EAF20B3E6A29AFA071CB /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,61 +150,72 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		569D2A7C5374BA5E790BB8ACF2D7E2FC /* Support Files */ = {
+		6960495167A86E982E934BEF5B88C93D /* SwiftExtention */ = {
 			isa = PBXGroup;
 			children = (
-				0C0CF7862D038A4B380763ADA8B15FA9 /* HUIKit.modulemap */,
-				91DAF665CEDE08148A10961D97C27358 /* HUIKit.xcconfig */,
-				DD491E2B4C76BEF82FBC5ADF8F7ACC3F /* HUIKit-dummy.m */,
-				F7EF067A9F6EBAABF5260439C9951EA1 /* HUIKit-prefix.pch */,
-				A22185EE7301A19EEA72BF4CF296BBE9 /* HUIKit-umbrella.h */,
-				DE12CD03B49BC3DE60D8FC8BA8D8238E /* Info.plist */,
+				8617427E41DE0F5D324D25E8DFFE0CFF /* ColorExtention.swift */,
+				E2D7BA53160839FE693087D65B9E562F /* DateExtention.swift */,
+				387F39127FE40105BC7A977D9424E5C7 /* FontExtention.swift */,
+				179880CA7A116A317337AA869780656F /* ImageExtention.swift */,
+				C770967DFA8E3E5FE9ECBB45E48A22E1 /* LayerExtention.swift */,
+				24F061AC96CD5EE5D798FBAA7ED3A1C0 /* StringExtention.swift */,
+				9F093A1C60F4C9C0DE85E484106AB06E /* ViewExtention.swift */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HUIKit";
+			name = SwiftExtention;
+			path = HUIKit/Classes/SwiftExtention;
+			sourceTree = "<group>";
+		};
+		7169884030DF390F61E65CA04AB6740D /* HUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				0B1DF587B68F36320BE30D8E391DC890 /* Support Files */,
+				6960495167A86E982E934BEF5B88C93D /* SwiftExtention */,
+				D1DA120E30E5A117361E4DDC7E695B0B /* SwiftUtils */,
+				E0BCB0640C5369CCB5FAC9B1E4CB0F52 /* UIClasses */,
+			);
+			name = HUIKit;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				EF05CFA9EBFDFCAEE6FC105FF2910A9E /* Development Pods */,
+				CD9DE26E62560DD0A7723A28D813A866 /* Development Pods */,
 				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
 				F17FE3AF936F10099144D8AAB2988A76 /* Products */,
 				138C862F8FB6EAF20B3E6A29AFA071CB /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		915E971B8FC17ADA141BD4064198FC82 /* SwiftExtention */ = {
+		CD9DE26E62560DD0A7723A28D813A866 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				922470F38EECD4976B5E61E3CE97BAF3 /* ColorExtention.swift */,
-				7253C2AC7878D785E99E9AD85C99A21B /* DateExtention.swift */,
-				E55B6B1C324D8FF6C22E53D8A5010200 /* FontExtention.swift */,
-				84C7F8485014D76110FF28A933D1A0E6 /* ImageExtention.swift */,
-				76C20A1E9635BF41637E7F73E9C6AD40 /* LayerExtention.swift */,
-				10FA5C08D58C3C48F7F77E481705F149 /* StringExtention.swift */,
-				25900A9E7A417F3BFB0FFC4BBC43D26E /* ViewExtention.swift */,
-			);
-			name = SwiftExtention;
-			sourceTree = "<group>";
-		};
-		97759AF6FF042C049E924996756B26CE /* HUIKit */ = {
-			isa = PBXGroup;
-			children = (
-				569D2A7C5374BA5E790BB8ACF2D7E2FC /* Support Files */,
-				915E971B8FC17ADA141BD4064198FC82 /* SwiftExtention */,
-			);
-			name = HUIKit;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		EF05CFA9EBFDFCAEE6FC105FF2910A9E /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				97759AF6FF042C049E924996756B26CE /* HUIKit */,
+				7169884030DF390F61E65CA04AB6740D /* HUIKit */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D1DA120E30E5A117361E4DDC7E695B0B /* SwiftUtils */ = {
+			isa = PBXGroup;
+			children = (
+				DA58E71088FC958534165D1E935799E3 /* UIUtils.swift */,
+			);
+			name = SwiftUtils;
+			path = HUIKit/Classes/SwiftUtils;
+			sourceTree = "<group>";
+		};
+		E0BCB0640C5369CCB5FAC9B1E4CB0F52 /* UIClasses */ = {
+			isa = PBXGroup;
+			children = (
+				956E610AB1624CCED3182D4E46BE5361 /* HAnimatedImageView.swift */,
+				6FF4A1E4F6FD75B741F92F9F614D088E /* HUIButton.swift */,
+				449BE16C6A9C6B86EEE67EEB75463F3E /* HUIControl.swift */,
+				442AFD34B5AF090113D7FAE091660726 /* HUIView.swift */,
+				CBF95703E8E30BDDD27B99D454BE49A4 /* HUIWindow.swift */,
+			);
+			name = UIClasses;
+			path = HUIKit/Classes/UIClasses;
 			sourceTree = "<group>";
 		};
 		F17FE3AF936F10099144D8AAB2988A76 /* Products */ = {
@@ -201,24 +238,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E86F7F2B3C98606EBFE88858ECA5EC64 /* Headers */ = {
+		9D20A4A965587EC2DCBD6902458B49ED /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7757AC3458572E7625EE216EB2E7CA2D /* HUIKit-umbrella.h in Headers */,
+				0FA110BBB3FCC79696B894A459FBCEE4 /* HUIKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AA71F5DCB45753936F679985AD66D888 /* HUIKit */ = {
+		522672436FBC9863D0D14180BD7E0FC4 /* HUIKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 968B0E75422967A869A65B7505C38118 /* Build configuration list for PBXNativeTarget "HUIKit" */;
+			buildConfigurationList = 76730B8BC2DE4E0BC8C78D693F5F6EC5 /* Build configuration list for PBXNativeTarget "HUIKit" */;
 			buildPhases = (
-				32CD3D76BB05A8F30E2B5D9EE92CD1CB /* Sources */,
-				FB266214205B0FA1D145504E58A5F9EB /* Frameworks */,
-				E86F7F2B3C98606EBFE88858ECA5EC64 /* Headers */,
+				253C786ADC63CBD666879566C95A5B7E /* Sources */,
+				75EA36B5962F0D1FAEBFE20ACF07C2B0 /* Frameworks */,
+				9D20A4A965587EC2DCBD6902458B49ED /* Headers */,
 			);
 			buildRules = (
 			);
@@ -268,25 +305,31 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA71F5DCB45753936F679985AD66D888 /* HUIKit */,
+				522672436FBC9863D0D14180BD7E0FC4 /* HUIKit */,
 				FF40DAB4AD42822BB79F58D1F47807EE /* Pods-HUIKit-Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		32CD3D76BB05A8F30E2B5D9EE92CD1CB /* Sources */ = {
+		253C786ADC63CBD666879566C95A5B7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				807D6599BD712FAC0038B204037B4264 /* ColorExtention.swift in Sources */,
-				EB43CB63C41C7EEFACAEFC2CE864A0C2 /* DateExtention.swift in Sources */,
-				EB4952C161680263EBEDC96776C86419 /* FontExtention.swift in Sources */,
-				D9BD7A9317E7CCF3E83383707857567C /* HUIKit-dummy.m in Sources */,
-				FB87AC6ADDA4F91F0B1C2762E94031DF /* ImageExtention.swift in Sources */,
-				4A94895810496102D31C415B98C99C7C /* LayerExtention.swift in Sources */,
-				C37CEE17B907A82A30AF8DB4E524852B /* StringExtention.swift in Sources */,
-				1DFEB364FD3897A20AFA8C53DEDCBAFC /* ViewExtention.swift in Sources */,
+				4425D3DC55499B494A382747D2864FB8 /* ColorExtention.swift in Sources */,
+				00BDC745E89D07A5C0C2F1261834A55B /* DateExtention.swift in Sources */,
+				8E2939D9FDDD9CC252BF8C203B3B1901 /* FontExtention.swift in Sources */,
+				6157CFEE5F3D8FB3D783D50DD4B0EF70 /* HAnimatedImageView.swift in Sources */,
+				B88806D94D7D782107B8E2B8F688B070 /* HUIButton.swift in Sources */,
+				6590D52999DE71E393481F23111ED154 /* HUIControl.swift in Sources */,
+				B3BEC7FF54026B72A7814CE6081C846A /* HUIKit-dummy.m in Sources */,
+				2E6362D85623DC96F6042691611D237D /* HUIView.swift in Sources */,
+				DE1351FFAED5D954647CCB4C94BFC283 /* HUIWindow.swift in Sources */,
+				5EF97C2E09AAFA783CB8B4AD06FBECE0 /* ImageExtention.swift in Sources */,
+				E4F3406B80F4C070657516D8E856930E /* LayerExtention.swift in Sources */,
+				C7933F2A08B4C290103A29563EB2BE7B /* StringExtention.swift in Sources */,
+				701AB2AF38F2EB4C5A944EF431F93384 /* UIUtils.swift in Sources */,
+				F0812D8BAFE91CA3DCEF9C464CE3E4D8 /* ViewExtention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +347,7 @@
 		2C36000827E8E2BA82F186CF10678348 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HUIKit;
-			target = AA71F5DCB45753936F679985AD66D888 /* HUIKit */;
+			target = 522672436FBC9863D0D14180BD7E0FC4 /* HUIKit */;
 			targetProxy = 26899D0675A853C0FD37B68CE4DB844D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -379,9 +422,9 @@
 			};
 			name = Release;
 		};
-		144727644C66CC2C8515E621B153641C /* Debug */ = {
+		1B46E1049E292EED2F7DE046B8AA0A46 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91DAF665CEDE08148A10961D97C27358 /* HUIKit.xcconfig */;
+			baseConfigurationReference = EEC69FB97699397E566A4DC47EAC32FF /* HUIKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -404,12 +447,12 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		7A580D893249EFCBDBEA83EE658FEF8F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -471,9 +514,9 @@
 			};
 			name = Debug;
 		};
-		90F28AC2CD0905611816AE8C4C46210F /* Release */ = {
+		CA798E906A07C95733ED3468E2FFC721 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91DAF665CEDE08148A10961D97C27358 /* HUIKit.xcconfig */;
+			baseConfigurationReference = EEC69FB97699397E566A4DC47EAC32FF /* HUIKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -496,12 +539,12 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		E8B0732F7D3E5BB15C212C29C806F741 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -570,20 +613,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		76730B8BC2DE4E0BC8C78D693F5F6EC5 /* Build configuration list for PBXNativeTarget "HUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA798E906A07C95733ED3468E2FFC721 /* Debug */,
+				1B46E1049E292EED2F7DE046B8AA0A46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8ED8B881EEA14079A6EF9A3960721866 /* Build configuration list for PBXNativeTarget "Pods-HUIKit-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B405AC2BE1713C39311FFEE72D7F730 /* Debug */,
 				1248ED7DDA540773A0030DBCB768B354 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		968B0E75422967A869A65B7505C38118 /* Build configuration list for PBXNativeTarget "HUIKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				144727644C66CC2C8515E621B153641C /* Debug */,
-				90F28AC2CD0905611816AE8C4C46210F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
