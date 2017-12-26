@@ -25,6 +25,7 @@
 		8A4CED1D1FEBCC5B00DFE86C /* HUIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED0F1FEBCC5A00DFE86C /* HUIControl.swift */; };
 		8A4CED1E1FEBCC5B00DFE86C /* HUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED101FEBCC5A00DFE86C /* HUIView.swift */; };
 		8A4CED1F1FEBCC5B00DFE86C /* HUIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CED111FEBCC5A00DFE86C /* HUIWindow.swift */; };
+		8A6209661FF262BD00FC2633 /* Font-Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6209651FF262BD00FC2633 /* Font-Color.swift */; };
 		CEA16928B1F00AAA62A48791 /* Pods_HUIKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A3CE364D352F7C252DE407B /* Pods_HUIKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		8A4CED0F1FEBCC5A00DFE86C /* HUIControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUIControl.swift; sourceTree = "<group>"; };
 		8A4CED101FEBCC5A00DFE86C /* HUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUIView.swift; sourceTree = "<group>"; };
 		8A4CED111FEBCC5A00DFE86C /* HUIWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUIWindow.swift; sourceTree = "<group>"; };
+		8A6209651FF262BD00FC2633 /* Font-Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font-Color.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		8A4CECC81FEBAFF600DFE86C /* HUIKit-Example */ = {
 			isa = PBXGroup;
 			children = (
+				8A6209651FF262BD00FC2633 /* Font-Color.swift */,
 				8A4CECC91FEBAFF600DFE86C /* AppDelegate.swift */,
 				8A4CECCB1FEBAFF600DFE86C /* ViewController.swift */,
 				8A4CECCD1FEBAFF600DFE86C /* Assets.xcassets */,
@@ -344,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A6209661FF262BD00FC2633 /* Font-Color.swift in Sources */,
 				8A4CECCC1FEBAFF600DFE86C /* ViewController.swift in Sources */,
 				8A4CECCA1FEBAFF600DFE86C /* AppDelegate.swift in Sources */,
 			);

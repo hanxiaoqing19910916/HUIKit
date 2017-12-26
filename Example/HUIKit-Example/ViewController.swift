@@ -15,12 +15,15 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        NSFont.systemThinFont(16).italic()
-        fontLabel.font = NSFont.compactRoundFont(16)
-//        view.background = NSColor.blackTransparent
         
-        // Do any additional setup after loading the view.
+        testFontWithView(view: view)
+        testColorWithView(view: view)
+
+        
+        
     }
+
+    
 
     override var representedObject: Any? {
         didSet {
