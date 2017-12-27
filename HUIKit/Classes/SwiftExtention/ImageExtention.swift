@@ -46,7 +46,6 @@ public extension NSImage {
     }
     
     func scaleImageTo(width: CGFloat) -> NSImage? {
-
         // scale aspect ratio
         let height = size.height * (width / size.width)
         

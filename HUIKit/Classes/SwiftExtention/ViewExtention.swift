@@ -194,43 +194,43 @@ public extension NSView {
         NSSound.beep()
     }
     
-    public func _change(size: NSSize, animated: Bool, _ save:Bool = true, removeOnCompletion: Bool = true, duration:Double = 0.2, timingFunction: String = kCAMediaTimingFunctionEaseOut, completion:((Bool)->Void)? = nil) {
-        if animated {
-            var presentBounds:NSRect = self.layer?.bounds ?? self.bounds
-            let presentation = self.layer?.presentation()
-            if let presentation = presentation, self.layer?.animation(forKey:"bounds") != nil {
-                presentBounds.size.width = NSWidth(presentation.bounds)
-                presentBounds.size.height = NSHeight(presentation.bounds)
-            }
-            
-            self.layer?.animateBounds(from: presentBounds, to: NSMakeRect(0, 0, size.width, size.height), duration: duration, timingFunction: timingFunction, removeOnCompletion: removeOnCompletion, completion: completion)
-            
-        } else {
-            self.layer?.removeAnimation(forKey: "bounds")
-        }
-        if save {
-            self.frame = NSMakeRect(NSMinX(self.frame), NSMinY(self.frame), size.width, size.height)
-        }
-    }
-    
-    public func _changeBounds(from: NSRect, to: NSRect, animated: Bool, _ save:Bool = true, removeOnCompletion: Bool = true, duration:Double = 0.2, timingFunction: String = kCAMediaTimingFunctionEaseOut, completion:((Bool)->Void)? = nil) {
-        
-        if save {
-            self.bounds = to
-        }
-        
-        if animated {
-            self.layer?.animateBounds(from: from, to: to, duration: duration, timingFunction: timingFunction, removeOnCompletion: removeOnCompletion, completion: completion)
-            
-        } else {
-            self.layer?.removeAnimation(forKey: "bounds")
-        }
-        
-        if !animated {
-            completion?(true)
-        }
-    }
-    
+//    public func _change(size: NSSize, animated: Bool, _ save:Bool = true, removeOnCompletion: Bool = true, duration:Double = 0.2, timingFunction: String = kCAMediaTimingFunctionEaseOut, completion:((Bool)->Void)? = nil) {
+//        if animated {
+//            var presentBounds:NSRect = self.layer?.bounds ?? self.bounds
+//            let presentation = self.layer?.presentation()
+//            if let presentation = presentation, self.layer?.animation(forKey:"bounds") != nil {
+//                presentBounds.size.width = NSWidth(presentation.bounds)
+//                presentBounds.size.height = NSHeight(presentation.bounds)
+//            }
+//            
+//            self.layer?.animateBounds(from: presentBounds, to: NSMakeRect(0, 0, size.width, size.height), duration: duration, timingFunction: timingFunction, removeOnCompletion: removeOnCompletion, completion: completion)
+//            
+//        } else {
+//            self.layer?.removeAnimation(forKey: "bounds")
+//        }
+//        if save {
+//            self.frame = NSMakeRect(NSMinX(self.frame), NSMinY(self.frame), size.width, size.height)
+//        }
+//    }
+//    
+//    public func _changeBounds(from: NSRect, to: NSRect, animated: Bool, _ save:Bool = true, removeOnCompletion: Bool = true, duration:Double = 0.2, timingFunction: String = kCAMediaTimingFunctionEaseOut, completion:((Bool)->Void)? = nil) {
+//        
+//        if save {
+//            self.bounds = to
+//        }
+//        
+//        if animated {
+//            self.layer?.animateBounds(from: from, to: to, duration: duration, timingFunction: timingFunction, removeOnCompletion: removeOnCompletion, completion: completion)
+//            
+//        } else {
+//            self.layer?.removeAnimation(forKey: "bounds")
+//        }
+//        
+//        if !animated {
+//            completion?(true)
+//        }
+//    }
+//    
     public func _change(opacity to: CGFloat, animated: Bool = true, _ save:Bool = true, removeOnCompletion: Bool = true, duration:Double = 0.2, timingFunction: String = kCAMediaTimingFunctionEaseOut, completion:((Bool)->Void)? = nil) {
         if animated {
             if let layer = self.layer {
