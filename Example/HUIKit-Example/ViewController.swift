@@ -35,8 +35,10 @@ class ViewController: NSViewController {
   
     override func mouseDown(with event: NSEvent) {
 
-         clayer.animateFrame(from: clayer.frame, to: CGRect(x: 0, y: 0, width: 400, height: 40), duration: 3.0, timingFunction:kCAMediaTimingFunctionSpring)
+//         clayer.animateFrame(from: clayer.frame, to: CGRect(x: 0, y: 0, width: 400, height: 40), duration: 3.0, timingFunction:kCAMediaTimingFunctionSpring)
 //        clayer.animateRotateCenter(from: 0, to: -90, duration: 2.0)
+        
+        fontLabel.animateRotateCenter(from: 0, to: -90, duration: 2.0)
     }
 
 }

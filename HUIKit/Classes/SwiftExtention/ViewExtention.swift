@@ -42,7 +42,7 @@ public extension NSView {
     
 }
 
-public extension NSView {
+extension NSView: LayerAnimation {
     
     public var snapshot: NSImage {
         guard let bitmapRep = bitmapImageRepForCachingDisplay(in: bounds) else { return NSImage() }
@@ -173,7 +173,7 @@ public extension NSView {
                 presentY =  NSMinY(presentation.frame)
                 presentX = NSMinX(presentation.frame)
             }
-            self.layer?.animatePosition(from: NSMakePoint(presentX, presentY), to: position, duration: duration, timingFunction: timingFunction, removeOnCompletion: removeOnCompletion, completion: completion)
+//            self.layer?.animatePosition(from: NSMakePoint(presentX, presentY), to: position, duration: duration, timingFunction: timingFunction, removeOnCompletion: removeOnCompletion, completion: completion)
         } else {
             self.layer?.removeAnimation(forKey: "position")
         }
@@ -189,7 +189,7 @@ public extension NSView {
     public func shake() {
         let a:CGFloat = 3
         if let layer = layer {
-            self.layer?.shake(0.04, from:NSMakePoint(-a + layer.position.x,layer.position.y), to:NSMakePoint(a + layer.position.x, layer.position.y))
+//            self.layer?.shake(0.04, from:NSMakePoint(-a + layer.position.x,layer.position.y), to:NSMakePoint(a + layer.position.x, layer.position.y))
         }
         NSSound.beep()
     }
@@ -239,7 +239,7 @@ public extension NSView {
                     opacity = CGFloat(presentation.opacity)
                 }
                 
-                layer.animateAlpha(from: opacity, to: to, duration:duration, timingFunction: timingFunction, removeOnCompletion: removeOnCompletion, completion: completion)
+//                layer.animateAlpha(from: opacity, to: to, duration:duration, timingFunction: timingFunction, removeOnCompletion: removeOnCompletion, completion: completion)
             }
             
         } else {
