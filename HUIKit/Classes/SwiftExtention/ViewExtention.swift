@@ -42,7 +42,7 @@ public extension NSView {
     
 }
 
-extension NSView: LayerAnimation {
+extension NSView {
     
     public var snapshot: NSImage {
         guard let bitmapRep = bitmapImageRepForCachingDisplay(in: bounds) else { return NSImage() }
@@ -74,14 +74,7 @@ extension NSView: LayerAnimation {
         return false
     }
     
-    public var backingScaleFactor: CGFloat {
-        if let window = window {
-            return window.backingScaleFactor
-        } else {
-            return CGFloat(NSScreen.main?.backingScaleFactor ?? 2.0)
-        }
-    }
-    
+
     public func removeAllSubviews() -> Void {
         while (self.subviews.count > 0) {
             self.subviews[0].removeFromSuperview();
@@ -162,96 +155,7 @@ extension NSView: LayerAnimation {
         }
         self.setFrameOrigin(NSMakePoint(x, y))
     }
-    
-    
-    public func _change(pos position: NSPoint, animated: Bool, _ save:Bool = true, removeOnCompletion: Bool = true, duration: Double = 0.2, timingFunction: String = kCAMediaTimingFunctionEaseOut, completion: ((Bool)->Void)? = nil) -> Void {
-        if animated {
-            var presentX = NSMinX(self.frame)
-            var presentY = NSMinY(self.frame)
-            let presentation: CALayer? = self.layer?.presentation()
-            if let presentation = presentation, self.layer?.animation(forKey:"position") != nil {
-                presentY =  NSMinY(presentation.frame)
-                presentX = NSMinX(presentation.frame)
-            }
-//            self.layer?.animatePosition(from: NSMakePoint(presentX, presentY), to: position, duration: duration, timingFunction: timingFunction, removeOnCompletion: removeOnCompletion, completion: completion)
-        } else {
-            self.layer?.removeAnimation(forKey: "position")
-        }
-        if save {
-            self.setFrameOrigin(position)
-            if let completion = completion, !animated {
-                completion(true)
-            }
-        }
-        
-    }
-    
-    public func shake() {
-        let a:CGFloat = 3
-        if let layer = layer {
-//            self.layer?.shake(0.04, from:NSMakePoint(-a + layer.position.x,layer.position.y), to:NSMakePoint(a + layer.position.x, layer.position.y))
-        }
-        NSSound.beep()
-    }
-    
-//    public func _change(size: NSSize, animated: Bool, _ save:Bool = true, removeOnCompletion: Bool = true, duration:Double = 0.2, timingFunction: String = kCAMediaTimingFunctionEaseOut, completion:((Bool)->Void)? = nil) {
-//        if animated {
-//            var presentBounds:NSRect = self.layer?.bounds ?? self.bounds
-//            let presentation = self.layer?.presentation()
-//            if let presentation = presentation, self.layer?.animation(forKey:"bounds") != nil {
-//                presentBounds.size.width = NSWidth(presentation.bounds)
-//                presentBounds.size.height = NSHeight(presentation.bounds)
-//            }
-//            
-//            self.layer?.animateBounds(from: presentBounds, to: NSMakeRect(0, 0, size.width, size.height), duration: duration, timingFunction: timingFunction, removeOnCompletion: removeOnCompletion, completion: completion)
-//            
-//        } else {
-//            self.layer?.removeAnimation(forKey: "bounds")
-//        }
-//        if save {
-//            self.frame = NSMakeRect(NSMinX(self.frame), NSMinY(self.frame), size.width, size.height)
-//        }
-//    }
-//    
-//    public func _changeBounds(from: NSRect, to: NSRect, animated: Bool, _ save:Bool = true, removeOnCompletion: Bool = true, duration:Double = 0.2, timingFunction: String = kCAMediaTimingFunctionEaseOut, completion:((Bool)->Void)? = nil) {
-//        
-//        if save {
-//            self.bounds = to
-//        }
-//        
-//        if animated {
-//            self.layer?.animateBounds(from: from, to: to, duration: duration, timingFunction: timingFunction, removeOnCompletion: removeOnCompletion, completion: completion)
-//            
-//        } else {
-//            self.layer?.removeAnimation(forKey: "bounds")
-//        }
-//        
-//        if !animated {
-//            completion?(true)
-//        }
-//    }
-//    
-    public func _change(opacity to: CGFloat, animated: Bool = true, _ save:Bool = true, removeOnCompletion: Bool = true, duration:Double = 0.2, timingFunction: String = kCAMediaTimingFunctionEaseOut, completion:((Bool)->Void)? = nil) {
-        if animated {
-            if let layer = self.layer {
-                var opacity:CGFloat = CGFloat(layer.opacity)
-                if let presentation = self.layer?.presentation(), self.layer?.animation(forKey:"opacity") != nil {
-                    opacity = CGFloat(presentation.opacity)
-                }
-                
-//                layer.animateAlpha(from: opacity, to: to, duration:duration, timingFunction: timingFunction, removeOnCompletion: removeOnCompletion, completion: completion)
-            }
-            
-        } else {
-            layer?.removeAnimation(forKey: "opacity")
-        }
-        if save {
-            self.layer?.opacity = Float(to)
-            if let completion = completion, !animated {
-                completion(true)
-            }
-        }
-    }
+
     
 }
 

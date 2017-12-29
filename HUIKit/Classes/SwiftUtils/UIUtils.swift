@@ -14,19 +14,13 @@ public func stringSize(text : String , font : NSFont , maxSize : CGSize) -> CGSi
 }
 
 public struct System {
-    
-    public static var isRetina:Bool {
+    public static var isRetina: Bool {
         get {
             return NSScreen.main?.backingScaleFactor == 2.0
         }
     }
-    
-    public static var backingScale:CGFloat {
+    public static var backingScale: CGFloat {
         return CGFloat(NSScreen.main?.backingScaleFactor ?? 2.0)
-    }
-    
-    public static var drawAsync:Bool {
-        return false
     }
 }
 

@@ -34,7 +34,9 @@ open class HUIView: NSView, CALayerDelegate {
     
     public var flip: Bool = true
     
-    public var isEventLess: Bool = false
+    open override var isFlipped: Bool {
+        return flip
+    }
     
     public let layoutHandlers: LayoutHandlers = LayoutHandlers()
     
@@ -48,6 +50,8 @@ open class HUIView: NSView, CALayerDelegate {
     
     public var border: BorderType?
     public var borderWidth: CGFloat = 1
+    
+    
     
     open var borderColor: NSColor = NSColor.clear {
         didSet {
@@ -113,23 +117,7 @@ open class HUIView: NSView, CALayerDelegate {
         return super._mouseInside()
     }
     
-    public func change(pos position: NSPoint, animated: Bool, _ save:Bool = true, removeOnCompletion: Bool = true, duration:Double = 0.2, timingFunction: String = kCAMediaTimingFunctionEaseOut, completion:((Bool)->Void)? = nil) -> Void  {
-        super._change(pos: position, animated: animated, save, removeOnCompletion: removeOnCompletion, duration: duration, timingFunction: timingFunction, completion: completion)
-    }
-    
-//    public func change(size: NSSize, animated: Bool, _ save:Bool = true, removeOnCompletion: Bool = true, duration:Double = 0.2, timingFunction: String = kCAMediaTimingFunctionEaseOut, completion:((Bool)->Void)? = nil) {
-//        super._change(size: size, animated: animated, save, removeOnCompletion: removeOnCompletion, duration: duration, timingFunction: timingFunction, completion: completion)
-//    }
-    public func change(opacity to: CGFloat, animated: Bool = true, _ save:Bool = true, removeOnCompletion: Bool = true, duration:Double = 0.2, timingFunction: String = kCAMediaTimingFunctionEaseOut, completion:((Bool)->Void)? = nil) {
-        super._change(opacity: to, animated: animated, save, removeOnCompletion: removeOnCompletion, duration: duration, timingFunction: timingFunction, completion: completion)
-        
-    }
-    
 
-    open override var isFlipped: Bool {
-        return flip
-    }
-    
     
     open override func setFrameSize(_ newSize: NSSize) {
         super.setFrameSize(newSize)
