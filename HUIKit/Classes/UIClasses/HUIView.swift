@@ -55,8 +55,6 @@ open class HUIView: NSView, CALayerDelegate {
     
     open func draw(_ layer: CALayer, in ctx: CGContext) {
         
-        ctx.fill(bounds)
-        
         if let border = border {
             ctx.setFillColor(borderColor.cgColor)
             

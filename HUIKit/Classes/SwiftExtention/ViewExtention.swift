@@ -98,9 +98,9 @@ extension NSView {
     public var backgroundColor: NSColor {
         get {
             if let backgroundColor = layer?.backgroundColor {
-                return NSColor(cgColor: backgroundColor) ?? .white
+                return NSColor(cgColor: backgroundColor) ?? .clear
             }
-            return .white
+            return .clear
         }
         set {
             self.layer?.backgroundColor = newValue.cgColor

@@ -83,11 +83,8 @@ open class HUIControl: HUIView {
     
     // default is the view backgroundColor
     open func set(background color: NSColor?, for state: HUIControlState) {
-        var backColor: NSColor = self.backgroundColor
-        if let bgColor = color {
-            backColor = bgColor
-        }
-        stateBackgroundMap[state.rawValue] = backColor
+        let color = color ?? self.backgroundColor
+        stateBackgroundMap[state.rawValue] = color
     }
     
     
@@ -111,13 +108,6 @@ open class HUIControl: HUIView {
         
         let currentState = self.state
         
-        // make sure normal state has one backgroundColor
-        if let color = stateBackgroundMap[HUIControlState.normal.rawValue] {
-            set(background:color, for: .normal)
-        } else {
-            set(background:backgroundColor, for: .normal)
-        }
-    
         // when button move to window , it maybe has different sate, self.state value Influenced by
         // isEnabled or isSelected property. so must apply state at this time.
         apply(state: currentState)
