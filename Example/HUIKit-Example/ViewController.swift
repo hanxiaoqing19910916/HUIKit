@@ -23,6 +23,13 @@ class ViewController: NSViewController {
         clayer.backgroundColor = NSColor.redUI.cgColor
         clayer.frame = CGRect(x: 120, y: 120, width: 200, height: 30)
         view.layer?.addSublayer(clayer)
+        
+        let loginBtn = HUIButton(frame: CGRect(x: 30, y: 100, width: 40, height: 50))
+        loginBtn.isTrackingEnabled = true
+        loginBtn.setTitle("登录", for: .normal)
+        loginBtn.setTitleColor(NSColor.white, for: .normal)
+        loginBtn.setTitleColor(NSColor.yellow, for: .mouseIn)
+        view.addSubview(loginBtn)
     }
 
     
@@ -43,6 +50,10 @@ class ViewController: NSViewController {
        fontLabel.shake(0.12)
        
 //         fontLabel.positionAnimate(from: CGPoint(x: -20, y: 0), to: CGPoint(x: 20, y: 0), duration: 2.0)
+        
+        
+        fontLabel.center()
+        
     }
 
 }

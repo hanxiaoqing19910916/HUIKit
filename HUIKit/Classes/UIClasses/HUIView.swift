@@ -40,18 +40,8 @@ open class HUIView: NSView, CALayerDelegate {
     
     public let layoutHandlers: LayoutHandlers = LayoutHandlers()
     
-    open var backgroundColor: NSColor = NSColor.clear {
-        didSet {
-            if oldValue != backgroundColor {
-                needsDisplay = true
-            }
-        }
-    }
-    
     public var border: BorderType?
     public var borderWidth: CGFloat = 1
-    
-    
     
     open var borderColor: NSColor = NSColor.clear {
         didSet {
@@ -61,12 +51,10 @@ open class HUIView: NSView, CALayerDelegate {
         }
     }
     
-    
     open override func draw(_ dirtyRect: NSRect) { }
     
     open func draw(_ layer: CALayer, in ctx: CGContext) {
         
-        ctx.setFillColor(backgroundColor.cgColor)
         ctx.fill(bounds)
         
         if let border = border {

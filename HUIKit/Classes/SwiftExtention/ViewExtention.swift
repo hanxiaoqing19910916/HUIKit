@@ -95,7 +95,7 @@ extension NSView {
         return inner
     }
     
-    public var background: NSColor {
+    public var backgroundColor: NSColor {
         get {
             if let backgroundColor = layer?.backgroundColor {
                 return NSColor(cgColor: backgroundColor) ?? .white
@@ -105,58 +105,25 @@ extension NSView {
         set {
             self.layer?.backgroundColor = newValue.cgColor
         }
-}
-    
-    public func centerX(_ superView: NSView? = nil, y: CGFloat? = nil) -> Void {
-        var x:CGFloat = 0
-        if let sv = superView {
-            x = CGFloat(roundf(Float((sv.frame.width - frame.width)/2.0)))
-        } else if let sv = self.superview {
-            x = CGFloat(roundf(Float((sv.frame.width - frame.width)/2.0)))
-        }
-        self.setFrameOrigin(NSMakePoint(x, y == nil ? NSMinY(self.frame) : y!))
     }
     
-    public func centerY(_ superView: NSView? = nil, x: CGFloat? = nil) -> Void {
-        var y: CGFloat = 0
-        if let sv = superView {
-            y = CGFloat(roundf(Float((sv.frame.height - frame.height)/2.0)))
-        } else if let sv = self.superview {
-            y = CGFloat(roundf(Float((sv.frame.height - frame.height)/2.0)))
-        }
-        self.setFrameOrigin(NSMakePoint(x ?? frame.minX, y))
+    
+    public func centerX(_ superView: NSView? = nil, y: CGFloat? = nil) {
+        let sv = superView ?? self.superview!
+        let centerX = (sv.frame.width - frame.width) / 2.0
+        setFrameOrigin(CGPoint(x: centerX, y: y ?? frame.minY))
     }
     
-    public func focus(_ size: NSSize) -> NSRect {
-        var x:CGFloat = 0
-        var y:CGFloat = 0
-        
-        x = CGFloat(roundf(Float((frame.width - size.width)/2.0)))
-        y = CGFloat(roundf(Float((frame.height - size.height)/2.0)))
-        return NSMakeRect(x, y, size.width, size.height)
+    public func centerY(_ superView: NSView? = nil, x: CGFloat? = nil) {
+        let sv = superView ?? self.superview!
+        let centerY = (sv.frame.height - frame.height) / 2.0
+        setFrameOrigin(CGPoint(x: x ?? frame.minX, y: centerY))
     }
     
-    public func focus(_ size: NSSize, inset: NSEdgeInsets) -> NSRect {
-        let x:CGFloat = CGFloat(roundf(Float((frame.width - size.width + (inset.left + inset.right))/2.0)))
-        let y:CGFloat = CGFloat(roundf(Float((frame.height - size.height + (inset.top + inset.bottom))/2.0)))
-        return NSMakeRect(x, y, size.width, size.height)
+    public func center(_ superView:NSView? = nil) {
+        centerX()
+        centerY()
     }
-
-    
-    public func center(_ superView:NSView? = nil) -> Void {
-        var x:CGFloat = 0
-        var y:CGFloat = 0
-        if let sv = superView {
-            x = CGFloat(roundf(Float((sv.frame.width - frame.width)/2.0)))
-            y = CGFloat(roundf(Float((sv.frame.height - frame.height)/2.0)))
-        } else if let sv = self.superview {
-            x = CGFloat(roundf(Float((sv.frame.width - frame.width)/2.0)))
-            y = CGFloat(roundf(Float((sv.frame.height - frame.height)/2.0)))
-        }
-        self.setFrameOrigin(NSMakePoint(x, y))
-    }
-
-    
 }
 
 extension NSView {

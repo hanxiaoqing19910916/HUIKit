@@ -58,7 +58,6 @@ open class HAnimatedImageView: NSView {
                 reset()
             }
             layer?.setNeedsDisplay()
-//            needsDisplay = true
         }
     }
 
@@ -67,9 +66,7 @@ open class HAnimatedImageView: NSView {
             if animateImageName != oldValue {
                 let resPath = Bundle.main.path(forResource: animateImageName, ofType: nil)!
                 animateImageData = NSData(contentsOfFile: resPath)
-//                reset()
             }
-//            needsDisplay = true
         }
     }
 
