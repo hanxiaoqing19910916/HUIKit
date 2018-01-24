@@ -103,7 +103,8 @@ extension NSView {
             return .clear
         }
         set {
-            self.layer?.backgroundColor = newValue.cgColor
+            wantsLayer = true
+            layer?.backgroundColor = newValue.cgColor
         }
     }
     
