@@ -26,9 +26,15 @@ class ViewController: NSViewController {
         
         let loginBtn = HUIButton(frame: CGRect(x: 30, y: 100, width: 40, height: 50))
         loginBtn.isTrackingEnabled = true
+        loginBtn.isEnabled  = false
         loginBtn.setTitle("登录", for: .normal)
         loginBtn.setTitleColor(NSColor.white, for: .normal)
         loginBtn.setTitleColor(NSColor.yellow, for: .mouseIn)
+        loginBtn.set(background: .red, for: .normal)
+        loginBtn.set(background: .blue, for: .mouseIn)
+        loginBtn.set(background: .gray, for: .disabled)
+
+
         view.addSubview(loginBtn)
     }
 
