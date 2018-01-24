@@ -9,6 +9,9 @@ import Foundation
 
 public extension NSColor {
     
+    convenience init(r: CGFloat, g: CGFloat,b: CGFloat, alpha: CGFloat = 1.0) {
+        self.init(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: alpha)
+    }
     convenience init(rgb: UInt32, alpha: CGFloat = 1.0) {
         self.init(red: CGFloat((rgb >> 16) & 0xff) / 255.0, green: CGFloat((rgb >> 8) & 0xff) / 255.0, blue: CGFloat(rgb & 0xff) / 255.0, alpha: alpha)
     }

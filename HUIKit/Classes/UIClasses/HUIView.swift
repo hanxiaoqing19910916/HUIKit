@@ -9,17 +9,17 @@
 import Cocoa
 
 
-public struct BorderType: OptionSet {
+public struct BorderPosition: OptionSet {
     public var rawValue: UInt32
     
     public init(rawValue: UInt32) {
         self.rawValue = rawValue
     }
     
-    public static let top = BorderType(rawValue: 1)
-    public static let bottom = BorderType(rawValue: 2)
-    public static let left = BorderType(rawValue: 4)
-    public static let right = BorderType(rawValue: 8)
+    public static let top = BorderPosition(rawValue: 1)
+    public static let bottom = BorderPosition(rawValue: 2)
+    public static let left = BorderPosition(rawValue: 4)
+    public static let right = BorderPosition(rawValue: 8)
 }
 
 
@@ -30,7 +30,7 @@ public class LayoutHandlers {
 }
 
 
-open class HUIView: NSView, CALayerDelegate {
+open class HUIView: NSView {
     
     public var flip: Bool = true
     
@@ -40,7 +40,7 @@ open class HUIView: NSView, CALayerDelegate {
     
     public let layoutHandlers: LayoutHandlers = LayoutHandlers()
     
-    public var border: BorderType?
+    public var borderPosition: BorderPosition?
     public var borderWidth: CGFloat = 1
     
     open var borderColor: NSColor = NSColor.clear {
@@ -51,35 +51,32 @@ open class HUIView: NSView, CALayerDelegate {
         }
     }
     
-    open override func draw(_ dirtyRect: NSRect) { }
-    
-    open func draw(_ layer: CALayer, in ctx: CGContext) {
+    open override func draw(_ dirtyRect: NSRect) {
+        guard let contextPtr = NSGraphicsContext.current?.graphicsPort else { return }
+        let ctx = unsafeBitCast(contextPtr, to: CGContext.self)
+        guard let borderPos = borderPosition else { return }
         
-        ctx.fill(bounds)
+        ctx.setFillColor(borderColor.cgColor)
         
-        if let border = border {
-            ctx.setFillColor(borderColor.cgColor)
-            
-            let selfWidth = NSWidth(frame)
-            let selfHeight = NSHeight(frame)
-            
-            var fillRect: CGRect = CGRect()
-            if border.contains(.top) {
-                let borderY = isFlipped ? 0 : selfHeight - borderWidth
-                fillRect = CGRect(x: 0, y: borderY, width: selfWidth, height: borderWidth)
-            }
-            if border.contains(.bottom) {
-                let borderY = self.isFlipped ? selfHeight - borderWidth : 0
-                fillRect = CGRect(x: 0, y: borderY, width: selfWidth, height: borderWidth)
-            }
-            if border.contains(.left) {
-                fillRect = CGRect(x: 0, y: 0, width: borderWidth, height: selfHeight)
-            }
-            if border.contains(.right) {
-                fillRect = CGRect(x: selfWidth - borderWidth, y: 0, width: borderWidth, height: selfHeight)
-            }
-            ctx.fill(fillRect)
+        let selfWidth = NSWidth(frame)
+        let selfHeight = NSHeight(frame)
+        
+        var fillRect: CGRect = CGRect()
+        if borderPos.contains(.top) {
+            let borderY = isFlipped ? 0 : selfHeight - borderWidth
+            fillRect = CGRect(x: 0, y: borderY, width: selfWidth, height: borderWidth)
         }
+        if borderPos.contains(.bottom) {
+            let borderY = self.isFlipped ? selfHeight - borderWidth : 0
+            fillRect = CGRect(x: 0, y: borderY, width: selfWidth, height: borderWidth)
+        }
+        if borderPos.contains(.left) {
+            fillRect = CGRect(x: 0, y: 0, width: borderWidth, height: selfHeight)
+        }
+        if borderPos.contains(.right) {
+            fillRect = CGRect(x: selfWidth - borderWidth, y: 0, width: borderWidth, height: selfHeight)
+        }
+        ctx.fill(fillRect)
     }
     
 
