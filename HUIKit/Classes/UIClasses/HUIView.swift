@@ -40,6 +40,8 @@ open class HUIView: NSView {
     
     public let layoutHandlers: LayoutHandlers = LayoutHandlers()
     
+    open var viewTag: Int = 0
+    
     public var borderPosition: BorderPosition?
     public var borderWidth: CGFloat = 1
     
@@ -55,7 +57,7 @@ open class HUIView: NSView {
         guard let contextPtr = NSGraphicsContext.current?.graphicsPort else { return }
         let ctx = unsafeBitCast(contextPtr, to: CGContext.self)
         guard let borderPos = borderPosition else { return }
-
+        
         ctx.setFillColor(borderColor.cgColor)
         
         let selfWidth = NSWidth(frame)

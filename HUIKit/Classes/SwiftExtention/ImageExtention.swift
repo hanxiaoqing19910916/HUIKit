@@ -57,7 +57,7 @@ public extension NSImage {
         scaleImage.lockFocus()
         draw(in: scaleRect, from: CGRect(), operation: .sourceOver, fraction: 1.0)
         scaleImage.unlockFocus()
-
+        
         return scaleImage
     }
     
@@ -88,7 +88,6 @@ public func NSImageJPEGRepresentation(_ image: NSImage, _ compressionQuality: CG
     
     let data: Data? = image.tiffRepresentation(using: .jpeg, factor: Float(compressionQuality))
     if let data = data {
-        
         // creat this NSBitmapImageRep object has two ways:
         // one: init by data form NSImage tiffRepresentation
         let imageRep = NSBitmapImageRep(data: data)
@@ -97,7 +96,6 @@ public func NSImageJPEGRepresentation(_ image: NSImage, _ compressionQuality: CG
         // imageRep = NSBitmapImageRep(cgImage: image.cgImage)
         
         // unknow which is best, use the first way above....
-        
         let properties: [NSBitmapImageRep.PropertyKey : Any] = [.compressionFactor : compressionQuality]
         return imageRep?.representation(using: .jpeg, properties: properties)
     } else {

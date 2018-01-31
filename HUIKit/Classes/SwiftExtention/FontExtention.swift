@@ -9,7 +9,7 @@
 import Cocoa
 
 public extension NSFont {
-
+    
     public static func systemRegularFont(_ size: CGFloat) -> NSFont {
         if #available(OSX 10.11, *) {
             return NSFont.systemFont(ofSize: size, weight: .regular)
@@ -48,7 +48,7 @@ public extension NSFont {
     public static func menloRegularFont(_ size: CGFloat) -> NSFont {
         return NSFont(name: "Menlo-Regular", size: size)!
     }
-
+    
     public func italic() -> NSFont {
         return NSFontManager.shared.convert(self, toHaveTrait: .italicFontMask)
     }
